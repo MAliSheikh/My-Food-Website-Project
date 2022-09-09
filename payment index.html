@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link href="css/payment.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Fredoka:wght@300;400;500&family=Great+Vibes&family=Pacifico&family=Poppins:ital,wght@0,300;1,900&family=Roboto:ital,wght@1,900&family=Sansita+Swashed:wght@900&family=Syne+Mono&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <h1>FOODIES</h1>
+            </div>
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li ><a href="index.html">HOME</a></li>
+                    <li ><a href="menu.html">MENU</a></li>
+                    <li><a href="CONTACT.html">CONTACT US</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" id="rem"></i>
+        </div>
+    </header>
+    <div class="wrapper">
+        <h2>Payment Form</h2>
+        <form method="POST">
+            <!-- <h4>Account</h4> -->
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Address" required class="name">
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                    </div>
+                    <div class="input- group">
+                        <div class="input-box">
+                            <input type="email" placeholder="Email Adress" required class="name">
+                            <i class="fa fa-envelope icon"></i>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <h4>Date Of Birht</h4>
+                            <input type="number" placeholder="DD"
+                            class="dob" min="1" max="31">
+                            <input type="number" placeholder="MM"
+                            class="dob" min="1" max="12" >
+                            <input type="number" placeholder="YYYY" 
+                            class="dob" min="1" >
+                        </div>
+                        <div class="input-box">
+                            <h4>Gender</h4>
+                            <input type="radio" id="b1"
+                            name="gender" checked class="radio">
+                            <label for="b1">Male</label>
+                            <input type="radio" id="b2" name="gender" class="radio">
+                            <label for="b2">Female</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <h4>Payment Details</h4>
+                            <input type="radio" name="pay"
+                            id="bc1" checked class="radio">
+                            <label for="bc1"><span><i class="fa fa-cc-visa"></i> Credit Card</span>
+                            </label>
+                            <input type="radio" name="pay"
+                            id="bc2" class="radio">
+                            <label for="bc2"><span><i class="fa fa-cc-paypal"></i> PayPal</span></label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="number" placeholder="Card Number" required="required" class="name" >
+                            <i class="fa fa-credit-card icon"></i>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                        <input type="tel" placeholder="Card CVC" required class="name">
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <select>
+                            <option>28 april</option>
+                            <option>29 april</option>
+                            <option>30 april</option>
+                            <option>01 may</option>
+                            <option>02 may</option>
+                            <option>03 may</option>
+                            <option>04 may</option>
+                            <option>05 may</option>
+                            <option>06 may</option>
+                            <option>07 may</option>
+                            <option>08 may</option>
+                            <option>09 may</option>
+                            <option>10 may</option>
+                        </select>
+                        <select>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="container">
+                        <button type="Submit" onclick="myFunction()">Submit</button>
+                        </div>
+                    </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer" data-aos="zoom-in"  data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h2>Resturant</h2>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="our team.html">Our Team</a></li>
+                        <li><a href="#">Order Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Online Order</h2>
+                    <ul>
+                        <li><a href="cart.html">Pakistani Foods</a></li>
+                        <li><a href="itali.html">Italian Foods</a></li>
+                        <li><a href="Fastfood.html">Fast Foods</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Get Help</h2>
+                    <ul>
+                      
+                        <li><a href="CONTACT.html">Contact US</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="Faq.html">FAQ'S</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Follow US</h2>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/malisheikh183"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/Muhamma76028015?t=vAixdXLq-zMAkGZHAMCtZw&s=08"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/m_a_sk_183/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+    </footer>   
+    <!-- <script>
+        function myFunction() {
+          alert("Your Order has been placed");
+        }
+        </script> -->
+</body>
+</html>
